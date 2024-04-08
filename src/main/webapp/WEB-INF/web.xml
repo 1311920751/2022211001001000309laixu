@@ -3,4 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--add code about new servlet!-->
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name><!--用任意名字-->
+        <servlet-class>com.laixu.week2.demo.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/hello</url-pattern><!--url 必须用/开头-->
+    </servlet-mapping>
+    <!--所以/hello=com.laixu.week2.demo.HelloWorldServlet -->
 </web-app>
